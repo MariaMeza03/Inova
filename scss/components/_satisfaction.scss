@@ -1,0 +1,64 @@
+.satisfaction{
+    width: 100%;
+    background: $black;
+    padding: 50px 0;
+
+    @media(min-width:1199px){
+        padding: 43px 0;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;
+        gap: 20px;
+
+        @media(min-width: 992px){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__ensign{
+        width: 200px;
+
+    }
+
+    &__text{
+        @include flex-center-center;
+        flex-direction: column;
+        width: 100%;
+
+
+        @media(min-width: 992px){
+            @include flex-start-center;
+            grid-column: 2/4;
+        }
+
+        h1{
+            color: $white;
+            font-weight: 700;
+            line-height: 56px;
+            font-size: 25px;
+            padding-bottom: 34px;
+            text-align: center;
+
+            @media(min-width: 992px){
+                font-size: 32px;
+                line-height: 36px;
+                text-align: start;
+            }
+        }
+
+        p{
+            color: $white;
+            font-weight: 400;
+            line-height: 29px;
+            font-size: 19px;
+            text-align: center;
+
+            @media(min-width: 1199px){
+                text-align: start;
+            }
+        }
+    }
+}

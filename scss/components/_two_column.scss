@@ -1,0 +1,92 @@
+.two_column{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding:0 0 30px 0;
+    
+
+    @media(min-width:1199px){
+        padding:0 0 60px 0 ;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column-reverse;
+        background-color: $grey_goose;
+        padding: 0;
+
+        @media(min-width: 1199px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            
+        }
+    }
+
+    &__imagen{
+        width: 100%;
+        height: 400px;
+        background-image:url('../../img/person-two-column.webp');	
+        background-size:cover;
+        background-position:right;
+        background-repeat: no-repeat; 
+
+        @media(min-width: 1199px){
+            height: 100%;
+            
+        }
+    }
+
+    &__text{
+        background-color: $grey_goose;
+        @include flex-center-center;
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+        padding: 30px 15px ;
+
+        @media(min-width:1199px){
+            padding: 60px 15px ;
+        }
+
+        h1{
+            color: $black;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 25px;
+            font-family: Poppins;
+
+            @media(min-width:1199px){
+                font-weight: 500;
+                font-size: 32px;
+            }
+        }
+
+        h2{
+            font-family: Poppins;
+            color: $black;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 22px;
+            display: none;
+
+            @media(min-width:1199px){
+                display: block;
+            }
+        }
+
+        p{
+            font-family: Poppins;
+            color: $black;
+            font-size: 19px;
+            
+        }
+
+        &__logo{
+            width: 140px;
+            margin: auto;
+        }
+
+    }
+
+}

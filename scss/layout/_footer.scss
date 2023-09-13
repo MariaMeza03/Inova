@@ -1,0 +1,156 @@
+.footer{
+	width: 100%;
+	background-color: $black;
+	padding: 30px 0 15px 0;
+	position: absolute;
+
+
+	@media(min-width:1199px){
+		padding: 43px 0 15px 0;
+	}
+
+	@media(min-width:768px){
+		background-color: $carbon_grey;
+	}
+
+
+	&__contact{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		padding-bottom: 30px;
+
+		@media(min-width:1199px){
+			padding-bottom: 60px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		&__logo{
+			width: 180px;
+
+			@media(max-width:1199px){
+				margin: auto;
+			}
+		}
+
+		&__text{
+			display: none;
+
+			@media(min-width:1199px){
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 15px;
+			}
+
+			&__column{
+				@include flex-start-start;
+				flex-direction: column;
+				gap: 10px;
+
+				h1{
+					color: white;
+					font-size: 19px;
+					font-style: normal;
+					font-weight: bold;
+
+				}
+
+				a.link{
+					color: $baltic_sea;
+					font-size: 15px;
+
+					@media(min-width: 1199px){
+						font-size: 15px;
+					}
+				}
+			}
+		}
+
+
+
+	}
+
+	hr{
+		display: none;
+		border: 1px solid $baltic_sea;
+
+		@media(min-width:768px){
+			display: block;
+		}
+	}
+
+	&__bottom{
+		padding-top: 0px;
+		width: 100%;
+		@include flex-center-center;
+
+
+		@media(min-width:768px){
+			padding-top: 15px;
+			@include flex-center-between;
+		}
+
+		p{
+			color: $white;
+			font-size: 12px;
+
+			@media(min-width:1199px){
+				font-size: 15px;
+			}
+
+			@media(min-width:768px){
+				color: $baltic_sea;
+			}
+		}
+
+		&__movil_text{
+			padding-top: 15px;
+			@include flex-center-center;
+			gap: 10px;
+			flex-direction: column;
+
+			@media(min-width:400px){
+				flex-direction: row;
+			}
+
+			@media(min-width:768px){
+				display: none;
+			}
+
+			a.movil, p.movil{
+				color: $white;
+				font-size: 12px;
+				text-align: center;
+
+				@media(min-width:768px){
+					color: $baltic_sea;
+				}
+
+				@media(min-width:1199px){
+					font-size: 15px;
+				}
+			}
+	
+		}
+
+		&__media{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 15px;
+
+			
+			@media(max-width:768px){
+				display: none;
+			}
+
+			&__item{
+				width: 20px;
+				height:20px;
+				margin: auto;
+			}
+
+		}
+		
+	}
+
+
+}
