@@ -12,7 +12,7 @@
     .container{
         @include flex-center-center;
         flex-direction: column-reverse;
-        background-color: $grey_goose;
+        background-color: $aqua_haze;
         padding: 0;
 
         @media(min-width: 1199px){
@@ -38,7 +38,7 @@
     }
 
     &__text{
-        background-color: $grey_goose;
+        background-color: $aqua_haze;
         @include flex-center-center;
         flex-direction: column;
         gap: 22px;
