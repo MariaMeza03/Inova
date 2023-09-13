@@ -163,15 +163,12 @@
         gap: 10px; }
         .footer__contact__text__column h1 {
           color: white;
-          font-size: 19px;
+          font-size: 15px;
           font-style: normal;
           font-weight: bold; }
         .footer__contact__text__column a.link {
           color: #5b5b5b;
           font-size: 15px; }
-          @media (min-width: 1199px) {
-            .footer__contact__text__column a.link {
-              font-size: 15px; } }
   .footer hr {
     display: none;
     border: 1px solid #5b5b5b; }
